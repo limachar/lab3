@@ -2,21 +2,22 @@
 #include "led.h"
 #include <stdbool.h>
 bool increment = true;
+uint8_t i = 0;
 
 void LED_init() {
 	DDRD |= (1 << PD6);
 }
 
 uint8_t simple_ramp() {
-	int i = 0;
+	
 	if (increment == true){
-		i+=5;
+		i+=1;
 		if(i == 255){
 			increment = false;
 		}
 	}
 	else if (increment == false){
-		i-=5;;
+		i-=1;
 		if(i == 0){
 			increment = true;
 		}	

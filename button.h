@@ -3,6 +3,7 @@
 
 void button_init(void);
 
-void button_pressed(void);
+void button_pressed(bool button_status, int *button_state);
 
+bool is_button_pressed(int *button_state);
 #endif 

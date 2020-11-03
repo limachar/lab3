@@ -3,4 +3,4 @@
 
 void timer_init(void);
 
-#endif // _TIMER_H_
+#endif
